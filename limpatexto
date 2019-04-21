@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+
+namespace Calculadora
+{
+    class LimpaTexto
+    {
+        public void Limpadados(Control.ControlCollection controles)
+        {
+            foreach(Control item in controles)
+            {
+
+                if (item.GetType() == typeof(TextBox))
+                {
+                    item.Text = string.Empty;
+                }
+
+            }
+        }
+    }
+}
